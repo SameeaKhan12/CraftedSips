@@ -1,0 +1,16 @@
+body {
+    font-size: 75px;
+
+
+
+
+}
+
+.items {
+    border: 4px black solid;
+    margin: 10px;
+    padding: 10px 5px 10px 5px;
+    background-color:blanchedalmond;
+    width: 300px;
+    height: 250px;
+}
