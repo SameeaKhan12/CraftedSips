@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <h1>SELECT YOUR COFFEE BEAN</h1>
+    <div class="top-selection"> 
+        <div>
+            <img src="images/circle.png">
+            <h2 class="name1">Name Of Bean</h2>
+        </div>
+        <div>
+            <img src="images/circle.png">
+            <h2 class="name2">Name Of Bean</h2>
+        </div>
+        <div>
+            <img src="images/circle.png">
+            <h2 class="name3">Name Of Bean</h2>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h1>Slider Content Display</h1>
+
+    <input type="range" min="0" max="100" value="50" id="slider">
+    <div id="content"></div>
+
+    <script>
+
+        // H STUFF - 80 60 40 20 16 14
+
+        var name1Element = document.querySelector('.name1');
+        var name2Element = document.querySelector('.name2');
+        var name3Element = document.querySelector('.name3');
+
+        // Change the text content
+        name1Element.textContent = 'New Name for Bean 1';
+        name2Element.textContent = 'New Name for Bean 2';
+        name3Element.textContent = 'New Name for Bean 3';
+        
+
+        const slider = document.getElementById('slider');
+        const content = document.getElementById('content');
+
+        slider.addEventListener('input', () => {
+        const sliderValue = slider.value;
+
+        if (sliderValue < 33) {
+            content.innerText = "First third - denoting flavor.";
+        } else if (sliderValue < 66) {
+            content.innerText = "Second third - denoting flavor";
+        } else {
+            content.innerText = "Third third - denoting flavor";
+        }
+
+        // Displaying the content
+        content.style.display = 'block';
+    });
+
+
+    </script>
+</body>
+</html>
