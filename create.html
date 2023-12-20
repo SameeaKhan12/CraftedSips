@@ -6,21 +6,40 @@
     <link rel="stylesheet" href="create.css">
 </head>
 <body>
-    <h1>SELECT YOUR COFFEE BEAN</h1>
+    <h2 style="padding-top: 300px;">SELECT YOUR COFFEE BEAN</h2>
     <div class="top-selection"> 
         <div>
             <img src="images/circle.png">
-            <h2 class="name1">Name Of Bean</h2>
+            <h3 class="name1">Name Of Bean</h3>
         </div>
         <div>
             <img src="images/circle.png">
-            <h2 class="name2">Name Of Bean</h2>
-        </div>
-        <div>
-            <img src="images/circle.png">
-            <h2 class="name3">Name Of Bean</h2>
+            <h3 class="name2">Name Of Bean</h3>
         </div>
     </div>
+
+    <div class="filter-block">
+        <h3>Filter Block</h3>
+    </div>
+
+    <div class="main-content">
+        <h3>Main Content Block</h3>
+        <div class="item-grid">
+            <div class="item-main">
+                <img src="Images/circle.png" alt="test" width="200px" height="200px">
+                <h4>Bean name</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id qui minus aliquid enim autem voluptatibus dolorum tempora laboriosam fugit ea mollitia, eaque quis porro consequuntur!</p>
+                <div class="add-button">
+                    <p>Add Bean</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <h3>Footer Content</h3>
+    </footer>
 
     <br>
     <br>
@@ -37,12 +56,11 @@
 
         var name1Element = document.querySelector('.name1');
         var name2Element = document.querySelector('.name2');
-        var name3Element = document.querySelector('.name3');
+
 
         // Change the text content
-        name1Element.textContent = 'New Name for Bean 1';
-        name2Element.textContent = 'New Name for Bean 2';
-        name3Element.textContent = 'New Name for Bean 3';
+        name1Element.textContent = 'Bean 1 Name';
+        name2Element.textContent = 'Bean 2 Name';
         
 
         const slider = document.getElementById('slider');

@@ -1,13 +1,28 @@
 body {
     text-align: center;
-    margin: 40px;
+    margin: 0 40 0 40;
 }
 
 h1 {
+    font-size: 80px;
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
 .top-selection {
+    background-color: blanchedalmond;
     display: flex;
     justify-content: center;
 }
@@ -18,15 +33,42 @@ h1 {
     padding: 20 40 20 40;
 }
 
-@keyframes example {
-    from {width: 200px; height: 200px;}
-    to {width: 250px; height: 250px;}
+.top-selection > div > img:hover { 
+    border: solid red 2px;
 }
 
-.top-selection > div > img:hover {
-    width: 250px;
-    height: 250px;
-    animation-name: example;
-    animation-duration: 0.2s;
+.filter-block {
+    background-color: brown;
 }
 
+.main-content {
+    background-color: aquamarine;
+}
+
+.item-grid {
+    display: grid;
+    background-color: pink;
+    padding: 15px;
+    grid-template: auto auto auto auto;
+    grid-gap: 30px;
+    gap: 10px;
+    place-items: center;
+}
+
+.item-grid > .item-main {
+    background-color: red;
+    text-align: center;
+    padding: 15px;
+}
+
+.item-main {
+    width: 200px;
+}
+
+.add-button {
+    background-color: red;
+}
+
+footer {
+    background-color: thistle;
+}
