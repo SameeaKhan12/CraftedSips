@@ -147,9 +147,9 @@ nav a {
   justify-content: center;
   align-items: flex-end;
   background: linear-gradient(to left,  
-              rgba(129, 67, 9, 0.939), 
-              rgb(159, 98, 13, 30%)
-            ), #c9761091 50%;
+              rgba(75, 53, 33, 0.667), 
+              rgba(158, 100, 18, 0.476)
+            ), #c976102a 50%;
   background-size: cover;
   background-position: left center;
 }
