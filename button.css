@@ -21,6 +21,7 @@
   background-color: rgb(2, 20, 49);
 }
 
+
 .join-button {
   background-color: rgb(255, 255, 255);
   border-color: rgb(14, 14, 201);
@@ -48,6 +49,7 @@
   opacity: 0.4;
 }
 
+
 .tweet-button {
   background-color:rgb(2, 158, 255);
   color: white;
@@ -60,7 +62,7 @@
   cursor: pointer;
   margin-left: 11px;
   transition: box-shadow 0.15s;
-  vertical-align: top; 
+  vertical-align: top; aligns buttons to the top else by default the text would align to a straight line across all buttons
 }
 
 .tweet-button:hover {
@@ -90,3 +92,55 @@
   opacity: 0.6;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.coffee-beans-container {
+  display: flex;
+  gap: 20px;
+}
+
+.coffee-bean {
+  width: 50px;
+  height: 80px;
+  background-color: #8B4513;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.coffee-powder-container {
+  position: relative;
+  display: none;
+}
+
+.coffee-powder {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #8B4513;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.colorful-bag {
+  width: 100px;
+  height: 150px;
+  background-color: #FFD700;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
