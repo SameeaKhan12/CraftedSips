@@ -1,0 +1,42 @@
+.btn {
+    width: 90px; /* should have a ratio size of 1:3 */
+    height:30px;
+    font-size: 16px;
+    background-color: #2b2129;
+    color:white;
+    font-family:  'Roboto Condensed', Arial, sans-serif;
+    border-radius: 3px;  
+    cursor: pointer;
+    border:none;
+
+
+}
+
+.enabled { 
+    background-color: #2b2129; 
+    transition: background-color .2s;
+}
+.enabled:hover {background-color: #dd8e58;}
+.enabled:active {background-color: #c2956e;}
+
+.focus {
+    background-color: #e5d1b8;
+    color: #708A81;
+    border: #708A81 solid 2px;
+    font-weight: bold;
+    transition: background-color .2s;
+}
+
+.focus:hover {
+    background-color: #708A81;
+    color: #e5d1b8;   
+}
+
+.focus:active {
+    background-color: #e5d1b8;
+    border:none;
+}
+
+.disabled { background-color: rgb(168, 168, 168); }
+.disabled:hover { background-color: rgb(82, 82, 82);
+}
