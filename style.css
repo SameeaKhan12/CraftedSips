@@ -52,15 +52,20 @@ nav a {
   text-align: center;
 }
 
-.product {
+.imageheader {
+  display: flex;
+  width: vw;
+  position:absolute;
+}
+/*.product {
   display: flex;
   height: 85vh;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   background-color: #D5D5D5;
-  position: relative; /* Add position relative for absolute positioning of ::before */
-}
+  position: relative; 
+}*/
 
 .product::before {
   content: "";
@@ -113,5 +118,10 @@ nav product::before:hover {
     margin-right: 1rem;
   }
 
+  
+  
 
+
+  
+  
 
