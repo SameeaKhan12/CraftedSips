@@ -45,28 +45,51 @@ h4 {
     background-color: aquamarine;
 }
 
-.item-grid {
+.item-grid-container {
     display: grid;
     background-color: pink;
-    padding: 15px;
-    grid-template: auto auto auto auto;
-    grid-gap: 30px;
+    grid-template-columns: repeat(3,1fr);
     gap: 10px;
     place-items: center;
 }
 
-.item-grid > .item-main {
+.item-main {
+    display: flex;
+    justify-content: space-between;
     background-color: red;
-    text-align: center;
-    padding: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    height: 300px;
 }
 
-.item-main {
-    width: 200px;
+.item-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10 0 10;
+    padding: 5 10 5 10;
+}
+
+.item-desc {
+    border: green solid 1px;
+}
+
+.item-text > .item-desc > h3 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sub-info {
+    display: flex;
+    justify-content: space-around;
+    border: green solid 1px;
 }
 
 .add-button {
-    background-color: red;
+    background-color: blue;
+
 }
 
 footer {
