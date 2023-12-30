@@ -2,38 +2,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crafted Sips</title>
     <link rel="stylesheet" href="Package.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <div class="leftSide">
-        <div class="mainImage">
-        <div class="miniGallery">
-            <div class="smolPhoto"></div>
-            <div class="smolPhoto"></div>
-            <div class="smolPhoto"></div>
-            <div class="smolPhoto"></div>
-        </div>    
-        </div>
+    <div class="navBar"> 
+        <nav>
+        <div class="center-element">Crafted Sips</div>
+        <a href="#home">HOME</a>
+        <a href="#create">CREATE</a>
+        <a href="#shop">SHOP</a>
+        <a href="#about">ABOUT</a>
+        <a href="#signin">SIGN IN</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
     </div>
 
-    <div class="rightSide">
-        <div> <h2>Customize: </h2> </div>
-        <div> <h4>Size: </h4>  <p>1 lb</p> <p>2 lb</p>  </div>
-        <div> <h4> Background: </h4></div>
-        <div class="BgImgDiv">
-            <div class="bgImg"></div>
-            <div class="bgImg"></div>
-            <div class="bgImg"></div>
-            <div class="bgImg"></div>
-            <div class="bgImg"></div>
-            <div class="bgImg"></div>
-        </div>
-        <div> <h4>Font: </h4> <!-- add input form here with drop down menu --></div>
-        <div> <h4> Quantity: </h4> <!-- add input box for Quantity--></div>
-    </div>
-        <!-- add checkout button-->
+    <div class="body">
+        <div class="bodySide Right">
+            <div> <h2>Customize: </h2> </div>
+            <div class="sizeCont"> 
+              <div class="sizeMini"> <h4 class="label">Size: </h4> </div> 
+              <div class="sizeMini"> <button class="btn sizeButton">1 lb</button> </div> 
+              <div class="sizeMini"> <button class="btn sizeButton">2 lb</button> </div> 
+            </div>
+            <div> <h4 class="label"> Background: </h4></div>
+            <div class="BgImgDiv">
+                <div class="bgDiv"> <img class="bgImg" src="Images/art design 1.png" alt="art design"></div>
+                <div class="bgDiv"> <img class="bgImg" src="Images/art design 2.png" alt="art design"></div>
+                <div class="bgDiv"> <img class="bgImg" src="Images/art design 3.png" alt="art design"></div>
+                <div class="bgDiv"> <img class="bgImg" src="Images/art design 4.png" alt="art design"></div>
+                <div class="bgDiv"> <img class="bgImg" src="Images/art design 5.png" alt="art design"></div>
+                <div class="bgDiv"> <img class="bgImg" src="Images/art design 6.png" alt="art design"></div>
+            </div>
+            <div class="Fonts">
+            <div> <h4 class="dropDown Font">Font: </h4> <!-- add input form here with drop down menu --></div>
+               <div class="dropDown">
+                    <button class="dropBtn">-Choose fonts-</button>
+                    <div class="dropDownContent">
+                        <a href="#">font 1</a>
+                        <a href="#">font 2</a>
+                        <a href="#">font 3</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- write a div for the name/input of that -->
+            <div class="Names"> 
+                <div class="name"><h4 class="label">Add Name: </h4></div>
+                <div class="name input">   
+                    <input type="text" id="nameInput" placeholder="Enter Name" maxlength="10"> 
+                    <button id="btn" class="sizeButton">Enter</button>
+                </div> 
+            </div>
+
+            <script>
+                const text = document.getElementById('nameInput');      
+                const btn = document.getElementById('btn');
+                const output = document.getElementById('output1');
+
+               function showName(input) {
+                output1.innerText = input
+               }
+               btn.addEventListener('click', () => {
+                showName(nameInput.value)
+               })
+
+            </script>
+
+            <div class="QuanPrice">
+                <div class="QPmini Quan"> 
+                    <h4 class="label">Quantity: </h4> 
+                    <input type="text" id="quanInput" placeholder="Enter Amount" maxlength="3"> 
+                    <button id="quanBtn" class="sizeButton">Enter</button>
+                </div>
+               
+                <div class="QPmini Price">
+                    <h4 class="label">Price: </h4>
+                    <p class="quanOut" id="quanOpt"></p>
+
+                </div>
+            </div>
+
+            <script>
+                const quanText = document.getElementById('quanInput');      
+                const quanBtn = document.getElementById('quanBtn');
+                const quanOpt = document.getElementById('quanOpt');
+
+               function showPrice(input) {
+                quanOpt.innerText = input+"$"
+               }
+               quanBtn.addEventListener('click', () => {
+                showPrice(quanInput.value)
+               })
+
+            </script>
+            
+            <div> <button class="sizeButton">Checkout </button></div>
+        </div>
+        
+        <div class="bodySide Left">
+            <div class="mainImage">
+                 <p class="opt" id="output1"> </p>
+                 <img class="mainImageBack" src="Images/package back blank.png" alt="back of main package">
+                
+            </div>
+
+            <div class="miniGallery">
+                <div class="smolPhoto"> <img class="miniImage" src="Images/package back blank.png" alt="back of main package"></div>
+                <div class="smolPhoto"> <img class="miniImage" src="Images/checkout product front.png" alt="front of main package"></div>
+                <div class="smolPhoto"> <img class="miniImage labeling" src="Images/product label.png" alt="back of main package"></div>
+                <div class="smolPhoto"> <img class="miniImage" src="Images/label for back.png" alt="front of main package"></div>
+            </div>    
+            </div>
+        </div>
+
+        </div>
 </body>
-</html>>
+</html>
