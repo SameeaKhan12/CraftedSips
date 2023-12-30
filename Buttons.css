@@ -16,7 +16,7 @@
     background-color: #2b2129; 
     transition: background-color .2s;
 }
-.enabled:hover {background-color: #dd8e58;}
+.enabled:hover {background-color: #2b2129; color: #dd8e58;}
 .enabled:active {background-color: #c2956e;}
 
 .focus {

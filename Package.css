@@ -182,6 +182,13 @@ h2 {
     display: block;
   }
 
+  #font1 {font-family: 'Monsieur La Doulaise', cursive; }
+
+  #font2 {font-family: 'Pinyon Script', cursive; }
+
+  #font3 {font-family: 'Calligraffitti', cursive;}
+
+
   .dropDownContent a:hover {background-color: #ddd;}
 
   .dropDown:hover .dropDownContent {display: block;}
@@ -214,7 +221,7 @@ h2 {
     text-align: center;
     z-index: 1;    
     color:white;
-  }
+    font-family: 'Monsieur La Doulaise', cursive;  }
 
   .QuanPrice {
     display: flex;
