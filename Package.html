@@ -13,9 +13,9 @@
     <div class="navBar"> 
         <nav>
         <div class="center-element">Crafted Sips</div>
-        <a href="#home">HOME</a>
-        <a href="#create">CREATE</a>
-        <a href="#shop">SHOP</a>
+        <a href="index.html"  target="_blank">HOME</a>
+        <a href="#create" >CREATE</a>
+        <a href="create.html" target="_blank">SHOP</a>
         <a href="#about">ABOUT</a>
         <a href="#signin">SIGN IN</a>
         <a href="#contact">CONTACT</a>
@@ -24,65 +24,76 @@
 
     <div class="body">
         <div class="bodySide Right">
-            <div> <h2>Customize: </h2> </div>
-            <div class="sizeCont"> 
-              <div class="sizeMini"> <h4 class="label">Size: </h4> </div> 
-              <div class="sizeMini"> <button class="btn sizeButton">1 lb</button> </div> 
-              <div class="sizeMini"> <button class="btn sizeButton">2 lb</button> </div> 
+            <div class="customizeDiv"> <h2>Customize: </h2> </div>
+
+            <div class="sizeDiv"> 
+                <div class="sizeMini"> <h4 class="label">Size: </h4> </div> 
+                <div class="sizeMini"> <button class="btn sizeButton">1 lb</button> </div> 
+                <div class="sizeMini"> <button class="btn sizeButton">2 lb</button> </div> 
             </div>
-            <div> <h4 class="label"> Background: </h4></div>
-            <div class="BgImgDiv">
-                <div class="bgDiv"> <img class="bgImg" src="Images/art design 1.png" alt="art design"></div>
-                <div class="bgDiv"> <img class="bgImg" src="Images/art design 2.png" alt="art design"></div>
-                <div class="bgDiv"> <img class="bgImg" src="Images/art design 3.png" alt="art design"></div>
-                <div class="bgDiv"> <img class="bgImg" src="Images/art design 4.png" alt="art design"></div>
-                <div class="bgDiv"> <img class="bgImg" src="Images/art design 5.png" alt="art design"></div>
-                <div class="bgDiv"> <img class="bgImg" src="Images/art design 6.png" alt="art design"></div>
+
+            <div class="line"> _____________________________________________________________________________</div>
+
+            <div> <h4 class="label"> Background: </h4> </div>
+            <div class="BgDiv">
+                <div class="bgMini"> <img class="bgImg" src="Images/art design 1.png" alt="art design"></div>
+                <div class="bgMini"> <img class="bgImg" src="Images/art design 2.png" alt="art design"></div>
+                <div class="bgMini"> <img class="bgImg" src="Images/art design 3.png" alt="art design"></div>
+                <div class="bgMini"> <img class="bgImg" src="Images/art design 4.png" alt="art design"></div>
+                <div class="bgMini"> <img class="bgImg" src="Images/art design 5.png" alt="art design"></div>
+                <div class="bgMini"> <img class="bgImg" src="Images/art design 6.png" alt="art design"></div>
             </div>
-            <div class="Fonts">
-            <div> <h4 class="dropDown Font">Font: </h4> <!-- add input form here with drop down menu --></div>
-               <div class="dropDown">
-                    <button class="dropBtn">-Choose fonts-</button>
+
+            <div class="line"> _____________________________________________________________________________</div>
+
+            <div class="fontDiv">
+                <div class="dropDown"> <h4 class="label">Font: </h4> </div>
+                <div class="dropDown">
+                    <button class=" btn dropBtn">-Choose fonts-</button>
                     <div class="dropDownContent">
-                        <a href="#" id="font1">font 1</a>
-                        <a href="#" id="font2">font 2</a>
-                        <a href="#" id="font3">font 3</a>
+                        <a href="#" id="font1">Monsieur La Doulaise</a>
+                        <a href="#" id="font2">Pinyon Script</a>
+                        <a href="#" id="font3">Calligraffitti</a>
                     </div>
                 </div>
             </div>
 
-            <div class="Names"> 
-                <div class="name"><h4 class="label">Add Name: </h4></div>
-                <div class="name input">   
+            <div class="line"> _____________________________________________________________________________</div>
+
+            <div class="nameDiv"> 
+                <div class="nameMini"> <h4 class="label">Add Name: </h4> </div>
+                <div class="nameMini">   
                     <input type="text" id="nameInput" placeholder="Enter Name" maxlength="10"> 
-                    <button id="btn" class="sizeButton">Enter</button>
+                    <button id="nameButton" class=" btn nameBtn">Enter</button>
                 </div> 
             </div>
 
             <script>
                 const text = document.getElementById('nameInput');      
-                const btn = document.getElementById('btn');
-                const output = document.getElementById('output1');
+                const nameBtn = document.getElementById('nameButton');
+                const output = document.getElementById('nameOutput');
 
                function showName(input) {
-                output1.innerText = input
+                nameOutput.innerText = input
                }
-               btn.addEventListener('click', () => {
+
+               nameButton.addEventListener('click', () => {
                 showName(nameInput.value)
                })
-
             </script>
 
-            <div class="QuanPrice">
-                <div class="QPmini Quan"> 
+            <div class="line"> _____________________________________________________________________________</div>
+
+            <div class="QuanDiv">
+                <div class="Quanmini Quan"> 
                     <h4 class="label">Quantity: </h4> 
                     <input type="text" id="quanInput" placeholder="Enter Amount" maxlength="3"> 
-                    <button id="quanBtn" class="sizeButton">Enter</button>
+                    <button id="quanBtn" class=" btn sizeQuan">Enter</button>
                 </div>
                
-                <div class="QPmini Price">
-                    <h4 class="label">Price: </h4>
-                    <p class="quanOut" id="quanOpt"></p>
+                <div class="Quanmini Price">
+                    <h4 class="label pricing">Price: </h4>
+                    <p class="quanOpt" id="quanOutput"></p>
 
                 </div>
             </div>
@@ -90,10 +101,10 @@
             <script>
                 const quanText = document.getElementById('quanInput');      
                 const quanBtn = document.getElementById('quanBtn');
-                const quanOpt = document.getElementById('quanOpt');
+                const quanOpt = document.getElementById('quanOutput');
 
                function showPrice(input) {
-                quanOpt.innerText = input+"$"
+                quanOpt.innerText = "  "+ input * 15 +"$"
                }
                quanBtn.addEventListener('click', () => {
                 showPrice(quanInput.value)
@@ -101,25 +112,33 @@
 
             </script>
             
-            <div> <button class="sizeButton">Checkout </button></div>
+            <div> 
+                <a href="checkout.html"  target="_blank">
+                <button class="btn checkoutButton">Checkout </button>
+                </a>
+            </div>
         </div>
         
         <div class="bodySide Left">
             <div class="mainImage">
-                 <p class="opt" id="output1"> </p>
+                 <p class="nameOpt" id="nameOutput"> </p>
                  <img class="mainImageBack" src="Images/package back blank.png" alt="back of main package">
-                
             </div>
 
-            <div class="miniGallery">
-                <div class="smolPhoto"> <img class="miniImage" src="Images/package back blank.png" alt="back of main package"></div>
-                <div class="smolPhoto"> <img class="miniImage" src="Images/checkout product front.png" alt="front of main package"></div>
-                <div class="smolPhoto"> <img class="miniImage labeling" src="Images/product label.png" alt="back of main package"></div>
-                <div class="smolPhoto"> <img class="miniImage" src="Images/label for back.png" alt="front of main package"></div>
+            <div class="galleryDiv">
+                <div class="gallerymini"> <img class="miniImage" src="Images/package back blank.png" alt="back of main package"></div>
+                <div class="gallerymini"> <img class="miniImage" src="Images/checkout product front.png" alt="front of main package"></div>
+                <div class="gallerymini"> <img class="miniImage labeling" src="Images/product label.png" alt="back of main package"></div>
+                <div class="gallerymini"> <img class="miniImage" src="Images/label for back.png" alt="front of main package"></div>
             </div>    
+            
+            <div class="DescDiv">
+                <h2>Light Hearted Lift</h2>
+                <h2>By: Crafted Sips</h2>
             </div>
-        </div>
 
         </div>
+
+    </div>
 </body>
 </html>

@@ -2,22 +2,33 @@ body {
 margin-left:40px;
 margin-right:40px;
 font-family:  'Roboto Condensed', Arial, sans-serif;
-
 }
+
 .body {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 200px;
 }
 
 .bodySide {
     margin-top:50px;
 }
 
+.line {
+    color:#dd8e58
+}
+
 .Right {
     width: 500px;
+    border: solid rgb(175, 173, 173) 1px;
+    padding:0px 50px 50px 50px;
+    position: relative;
+    top:60px;
+    box-shadow: 0px 1px 5px #708A81;    
+
 }
 
 .Left {
@@ -26,10 +37,11 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
 }
 
 .mainImage {
-    /*background-color: grey;*/
-    border: solid black 2px;
+    border: solid rgb(175, 173, 173) 1px;
     width: 600px;
-    height:600px;    
+    height:600px;
+    box-shadow: 1px 1px 5px #708A81;    
+ 
 
 }
 .mainImageBack {
@@ -40,12 +52,14 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
     margin:auto;
 }
 
-.smolPhoto {
+.gallerymini {
     background-color: white;
-    border: solid #2b2129 1px;
+    border: solid rgb(175, 173, 173) 1px;
     width: 145px;
     height: 145px;
     margin-top: 15px;
+    box-shadow: 1px 1px 3px #708A81  
+
 }
 
 
@@ -65,10 +79,15 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
 }
 
 
-.miniGallery {
+.galleryDiv {
     width:600px;
     display: flex;
     justify-content: space-between;
+}
+
+.customizeDiv {
+    padding: 0px 30px 0px 30px;
+
 }
 
 h2 {
@@ -79,55 +98,42 @@ h2 {
     font-size: 20px;
 }
 
-.sizeCont {
+.sizeDiv {
     display: flex;
     align-items: center;
     position: relative;
-}
 
-.sizeCont > .sizeMini {
-    margin: 0px 10px 0px 10px;
 }
 
 .btn {
-    width: 90px; /* should have a ratio size of 1:3 */
+    width: 90px; 
     height:30px;
     font-size: 16px;
     background-color: #2b2129;
     color:white;
-    font-family:  'Roboto Condensed', Arial, sans-serif;
     border-radius: 3px;  
     cursor: pointer;
     border:none;
-
+    font-family:  'Roboto Condensed', Arial, sans-serif;
+    transition: background-color .1s;
 
 }
+
+.btn:hover {background-color: #2b2129; color: #dd8e58;}
+.btn:active {background-color: #c2956e;}
 
 .sizeButton {
-    background-color: #e5d1b8;
-    color: #708A81;
-    border: #708A81 solid 2px;
-    font-weight: bold;
-    transition: background-color .2s;
+    margin: 0px 10px 0px 15px;
+    width: 170px;
 }
 
-.sizeButton:hover {
-    background-color: #708A81;
-    color: #e5d1b8;   
-}
-
-.sizeButton:active {
-    background-color: #e5d1b8;
-    border:none;
-}
-
-.BgImgDiv {
+.BgDiv {
     width: 500px;
     display:flex;
     flex-wrap: wrap;
 }
 
-.bgDiv {
+.bgMini {
     border: solid #2b2129 1px;
     width:120px;
     height: 120px;
@@ -141,29 +147,25 @@ h2 {
 .bgImg:hover {
     box-shadow: 1px 1px 1px #2b2129, 0 0 15px #dd8e58}
 
-.Font {
-    font-size: 20px;
-    margin-right: 20px;
-}
-
-.Fonts {
+.fontDiv {
     display: flex;
     align-items: center;
     
-}
-.dropBtn {
-    width: 300px;
-    height:30px;
-    font-size: 14px;
-    padding:5px;
-    background-color: #e5d1b8;
-    color: #708A81;
-    border: #708A81 solid 2px;
 }
 
 .dropDown{
     position: relative;
     display: inline-block;
+}
+
+
+.dropBtn {
+    width: 350;
+    height:30px;
+    font-size: 16px;
+    padding:5px;
+    margin-left: 20px;
+
 }
 
 .dropDownContent{
@@ -182,9 +184,9 @@ h2 {
     display: block;
   }
 
-  #font1 {font-family: 'Monsieur La Doulaise', cursive; }
+  #font1 {font-family: 'Monsieur La Doulaise', cursive; font-size: 20px;}
 
-  #font2 {font-family: 'Pinyon Script', cursive; }
+  #font2 {font-family: 'Pinyon Script', cursive; font-size: 18px;}
 
   #font3 {font-family: 'Calligraffitti', cursive;}
 
@@ -193,25 +195,22 @@ h2 {
 
   .dropDown:hover .dropDownContent {display: block;}
 
-  .dropDown:hover .dropBtn {background-color: #708A81; color: #e5d1b8}
+  .dropDown:hover .dropBtn {background-color: #2b2129; color: #dd8e58}
 
-.Names{
+.nameDiv{
     display: flex;
     align-items: center;
     }
 
-.input {
-    padding-left: 20px;
-    
-}
-
 #nameInput {
     height:30px;
     width:220px;
+    margin-left: 20px;
+    margin-right: 10px;
 
 }
 
-  .opt {
+  .nameOpt {
     width:200px;
     height:100px;
     position: relative;
@@ -223,24 +222,42 @@ h2 {
     color:white;
     font-family: 'Monsieur La Doulaise', cursive;  }
 
-  .QuanPrice {
+  .QuanDiv {
     display: flex;
   }
 
   .Price {
     margin-left:70px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .pricing {
+    font-size: 40;
+    position: relative;
+    bottom: 35px;
   }
 
   #quanInput {
-    width: 100px;
+    width: 150px;
+    height: 30px;
   }
 
-  .quanOut {
+  .sizeQuan {
+    margin-left: 10px;
+  }
+
+  .quanOpt {
     width: 50px;
     height:50px;
     position: relative;
-    top:-50px;
-    left: 50px;
-    font-size: 20px;
+    bottom: 20px;
+    font-size: 40px;
     font-weight: bold;
+  }
+
+  .checkoutButton {
+    width:500px;
+    height: 100px;
+    font-size: 40px;
   }
