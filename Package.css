@@ -18,7 +18,7 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
 }
 
 .line {
-    color:#dd8e58
+    color:#dd8e58;
 }
 
 .Right {
@@ -27,7 +27,7 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
     padding:0px 50px 50px 50px;
     position: relative;
     top:60px;
-    box-shadow: 0px 1px 5px #708A81;    
+    box-shadow: 0px 1px 5px #708A81;  
 
 }
 
@@ -37,13 +37,13 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
 }
 
 .mainImage {
-    border: solid rgb(175, 173, 173) 1px;
+    border: solid rgb(175, 173, 173) 2px;
     width: 600px;
     height:600px;
-    box-shadow: 1px 1px 5px #708A81;    
- 
-
+    box-shadow: 1px 1px 5px #708A81;  
+    background-color: #b1c2bc;
 }
+
 .mainImageBack {
     height:95%;
     position: relative;
@@ -58,7 +58,8 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
     width: 145px;
     height: 145px;
     margin-top: 15px;
-    box-shadow: 1px 1px 3px #708A81  
+    box-shadow: 1px 1px 3px #708A81;  
+    background-color: #b1c2bc;
 
 }
 
@@ -83,6 +84,10 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
     width:600px;
     display: flex;
     justify-content: space-between;
+}
+
+.starImg {
+    height: 40px;
 }
 
 .customizeDiv {
@@ -125,6 +130,11 @@ h2 {
 .sizeButton {
     margin: 0px 10px 0px 15px;
     width: 170px;
+}
+
+.Background {
+    background-color: #c2956e;
+    padding: 5px;
 }
 
 .BgDiv {
@@ -200,6 +210,8 @@ h2 {
 .nameDiv{
     display: flex;
     align-items: center;
+    background-color: #c2956e;
+    padding: 5px;
     }
 
 #nameInput {
