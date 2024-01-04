@@ -20,62 +20,77 @@
         <a href="#about">ABOUT</a>
         <a href="#signin">SIGN IN</a>
         <a href="#contact">CONTACT</a>
-      </nav>
- 
-    <h1>Checkout To Get Your Order Shipped!</h1>
+    </nav>
+
+    <h2>
+        CHECKOUT
+    </h2>
 
     <div class="checkout">
 
-            <h2 id="ftotal">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quo alias nihil deleniti placeat harum aperiam dicta facere vitae. Minima quam quo itaque iste unde, facilis beatae eius amet voluptatibus?
-            </h2>
-                <script> 
-                    function total(p1, p2, p3, p4) { return p1 + p2 + p3 }
-                
-                    document.getElementById("ftotal").innerHTML = total(8.99, 13.99, 9.99, 15.86);
-
-                    document.write("lorem dfjdlfja sldkjfldsjfioisdhflds fhsd");
-                </script>
-
-
+        <div> 
+            <a href="Package.html"  target="_blank">
+                <button class="editqty">Edit Order </button>
+            </a>
         </div>
 
-        <div class="items">
+        <form id="paymentForm">
+            <h2>Payment Details</h2>
+        
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+        
+            <label for="cardName">Cardholder Name</label>
+            <input type="text" id="cardName" name="cardName" placeholder="John Doe" required>
+        
+            <div class="row">
+                <div class="col">
+                <label for="expiryDate">Expiry Date</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                </div>
+                <div class="col">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                </div>
+            </div>
+        
+            <button type="submit">Submit Payment</button>
+        </form>
+        
+        <h2 id="ftotal"></h2>
 
-            <img class="img1" src="Images/checkout product front.png" alt="Masala">
+        <script> 
+            function total(p1, p2, p3, p4) { return p1 + p2 + p3 }
+        
+            document.getElementById("ftotal").innerHTML = total(8.99, 13.99, 9.99, 15.86);
+        </script>
 
-            <p>
-                here is where things should pop, why is there no border? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, placeat minus? Quisquam voluptas tempore dicta minus quos inventore enim, iusto error incidunt autem deleniti repellat delectus placeat minima provident sed expedita. Veritatis, est? Maxime, quo nobis. Vero atque impedit, voluptatibus totam assumenda dolorum tempore sint velit optio quos provident adipisci a harum ex architecto ducimus quisquam accusamus autem unde! Veniam quos perspiciatis placeat voluptate iste, a eum ullam aliquid deserunt minima hic fuga aperifuga vero? Dolore, perferendis voluptate, minima fuga eum quidem assumenda itaque magnam laudantium nostrum earum modi aliquid
-            </p>
+    </div>
 
-        </div>
+    <div class="items">
+        <h1> Masala Delight</h1>
 
-        <br>
+        <img class="Images img1" src="Images/checkout product front.png" alt="Masala">
 
-        <div class="items">
+        <ul class="desc img1">
+            <li>2 lbs </li>
+            <li> Very bold sweet  </li>
+            <li> Lorem </li>
+        </ul>
+    </div>
+        
+    <div class="items">
+        <h1>Light Hearted Lift</h1>
 
-            <img class="img2" src="Images/main page product front.png" alt="light Hearted">
+        <img class="Images img2" src="Images/main page product front.png" alt="Lift">
 
-            <p>
-                here is where things should pop, why is there no border? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, placeat minus? Quisquam voluptas tempore dicta minus quos inventore enim, iusto error incidunt autem deleniti repellat delectus placeat minima provident sed expedita. Veritatis, est? Maxime, quo nobis. Vero atque impedit, vo
-            </p>
+        <ul class="desc img1">
+            <li>2 lbs </li>
+            <li> Very bold sweet  </li>
+            <li> Lorem </li>
+        </ul>
+    </div>
 
-        </div>
 
-        <br>
-
-        <div class="items">
-
-            <img class="img1" src="Images/img1.jpg" alt="color">
-
-            <p>
-                here is where things should pop, why is there no border? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, placeat minus? Quisquam voluptas tempore dicta minus quos inventore enim, iusto error incidunt autem deleniti repellat delectus placeat minima provident sed expedita. Veritatis, est? Maxime, e aspernatur repellat, aperiam amet, quidem maxime iusto rem voluptatem velit fuga tempora ut, debitis dolorem expedita exercitationem autem corrupti.
-            </p>
-
-        </div>
-    
-    
-    
-    
-    </body>
+</body>
 </html>
