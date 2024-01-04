@@ -23,11 +23,11 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
 
 .Right {
     width: 500px;
-    border: solid rgb(175, 173, 173) 1px;
     padding:0px 50px 50px 50px;
     position: relative;
     top:60px;
-    box-shadow: 0px 1px 5px #708A81;  
+   /*  border: solid rgb(175, 173, 173) 1px;
+    box-shadow: 1px 1px 3px rgb(175, 173, 173); */
 
 }
 
@@ -37,36 +37,34 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
 }
 
 .mainImage {
-    border: solid rgb(175, 173, 173) 2px;
+    /*border: solid rgb(175, 173, 173) 2px;*/
     width: 600px;
     height:600px;
-    box-shadow: 1px 1px 5px #708A81;  
-    background-color: #b1c2bc;
+    box-shadow: 0px 1px 5px rgb(202, 202, 202);  
 }
 
 .mainImageBack {
     height:95%;
     position: relative;
-    bottom:200px;
+    bottom: 145px;
     display: block;
     margin:auto;
 }
 
 .gallerymini {
     background-color: white;
-    border: solid rgb(175, 173, 173) 1px;
-    width: 145px;
-    height: 145px;
+    /*border: solid rgb(175, 173, 173) 1px;*/
+    width: 140px;
+    height: 160px;
     margin-top: 15px;
-    box-shadow: 1px 1px 3px #708A81;  
-    background-color: #b1c2bc;
-
+    box-shadow: 0px 1px 3px rgb(163, 163, 163);  
 }
 
 
 .miniImage {
-    height:98%;
-    margin:1px;
+    height:85%;
+    padding-top: 10px;
+    padding-bottom: 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -90,17 +88,13 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
     height: 40px;
 }
 
-.customizeDiv {
-    padding: 0px 30px 0px 30px;
-
-}
-
 h2 {
     font-size: 60px;
 }
 
 .label{
     font-size: 20px;
+    font-weight: bolder;
 }
 
 .sizeDiv {
@@ -125,20 +119,26 @@ h2 {
 }
 
 .btn:hover {background-color: #2b2129; color: #dd8e58;}
-.btn:active {background-color: #c2956e;}
+
+.btn:active {
+    box-shadow: 0px 1px 5px rgb(92, 92, 92); 
+    font-weight: bold; 
+}
 
 .sizeButton {
     margin: 0px 10px 0px 15px;
-    width: 170px;
+    width: 100px;
 }
 
 .Background {
-    background-color: #c2956e;
-    padding: 5px;
+    padding-top: 5px;
 }
 
 .BgDiv {
     width: 500px;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
     display:flex;
     flex-wrap: wrap;
 }
@@ -170,18 +170,23 @@ h2 {
 
 
 .dropBtn {
-    width: 350;
+    width: 340px;
     height:30px;
-    font-size: 16px;
+    font-size: 14px;
     padding:5px;
     margin-left: 20px;
+    background-color: white;
+    color: #2b2129;
+    font-weight: bold;
+    border: solid #2b2129 1px;
 
 }
 
 .dropDownContent{
     display: none;
     position: absolute;
-    min-width: 160px;
+    width: 180px;
+    left: 20px;
     background-color: #f1f1f1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -210,8 +215,6 @@ h2 {
 .nameDiv{
     display: flex;
     align-items: center;
-    background-color: #c2956e;
-    padding: 5px;
     }
 
 #nameInput {
@@ -236,6 +239,8 @@ h2 {
 
   .QuanDiv {
     display: flex;
+    align-items: center;
+    margin-right: 10px;
   }
 
   .Price {

@@ -24,18 +24,11 @@
 
     <div class="body">
         <div class="bodySide Right">
-            <div class="customizeDiv"> <h2>Customize: </h2> </div>
+            <div> <h2 class="customizeDiv">Customize: </h2> </div>
 
-            <div class="sizeDiv"> 
-                <div class="sizeMini"> <h4 class="label">Size: </h4> </div> 
-                <div class="sizeMini"> <button class="btn sizeButton">1 lb</button> </div> 
-                <div class="sizeMini"> <button class="btn sizeButton">2 lb</button> </div> 
-            </div>
-
-            <div class="line"> _____________________________________________________________________________</div>
-
+            
             <div class="Background">
-                <div> <h4 class="label"> Background: </h4> </div>
+                <div> <h4 class="label"> Select your background: </h4> </div>
                 <div class="BgDiv">
                     <div class="bgMini"> <img class="bgImg" src="Images/art design 1.png" alt="art design"></div>
                     <div class="bgMini"> <img class="bgImg" src="Images/art design 2.png" alt="art design"></div>
@@ -46,12 +39,10 @@
                 </div>
             </div>
 
-            <div class="line"> _____________________________________________________________________________</div>
-
             <div class="fontDiv">
                 <div class="dropDown"> <h4 class="label">Font: </h4> </div>
                 <div class="dropDown">
-                    <button class=" btn dropBtn">-Choose fonts-</button>
+                    <button class=" btn dropBtn">Select fonts</button>
                     <div class="dropDownContent">
                         <a href="#" id="font1">Monsieur La Doulaise</a>
                         <a href="#" id="font2">Pinyon Script</a>
@@ -60,13 +51,11 @@
                 </div>
             </div>
 
-            <div class="line"> _____________________________________________________________________________</div>
-
             <div class="nameDiv"> 
                 <div class="nameMini"> <h4 class="label">Add Name: </h4> </div>
                 <div class="nameMini">   
-                    <input type="text" id="nameInput" placeholder="Enter Name" maxlength="10"> 
-                    <button id="nameButton" class=" btn nameBtn">Enter</button>
+                    <input type="text" id="nameInput" placeholder="Add Name" maxlength="10"> 
+                    <button id="nameButton" class=" btn nameBtn">Submit</button>
                 </div> 
             </div>
 
@@ -84,20 +73,21 @@
                })
             </script>
 
-            <div class="line"> _____________________________________________________________________________</div>
+            <div class="sizeDiv"> 
+                <div class="sizeMini"> <h4 class="label">Size: </h4> </div> 
+                <div class="sizeMini"> <button class="btn sizeButton">1 lb</button> </div> 
+                <div class="sizeMini"> <button class="btn sizeButton">2 lb</button> </div>
+                <div class="sizeMini"> <button class="btn sizeButton">3 lb</button> </div> 
+            </div>
 
-            <div class="QuanDiv">
-                <div class="Quanmini Quan"> 
-                    <h4 class="label">Quantity: </h4> 
-                    <input type="text" id="quanInput" placeholder="Enter Amount" maxlength="3"> 
-                    <button id="quanBtn" class=" btn sizeQuan">Enter</button>
+
+            <div class="Quantity">
+                <div class=" QuanDiv"> 
+                    <div class="QuanMini"><h4 class="label">Quantity: </h4> </div>
+                    <div class="QuanMini"><input type="text" id="quanInput" placeholder="Add Amount" maxlength="3"> </div>
+                    <div class="QuanMini"><button id="quanBtn" class=" btn sizeQuan">Submit</button></div>
                 </div>
                
-                <div class="Quanmini Price">
-                    <h4 class="label pricing">Price: </h4>
-                    <p class="quanOpt" id="quanOutput"></p>
-
-                </div>
             </div>
 
             <script>
@@ -113,6 +103,12 @@
                })
 
             </script>
+
+             <div class=" Price">
+                    <h4 class="label pricing">Price: </h4>
+                    <p class="quanOpt" id="quanOutput"></p>
+
+                </div>
             
             <div> 
                 <a href="checkout.html"  target="_blank">
@@ -124,11 +120,11 @@
         <div class="bodySide Left">
             <div class="mainImage">
                  <p class="nameOpt" id="nameOutput"> </p>
-                 <img class="mainImageBack" src="Images/package back blank.png" alt="back of main package">
+                 <img class="mainImageBack" src="Images/revised back.png" alt="back of main package">
             </div>
 
             <div class="galleryDiv">
-                <div class="gallerymini"> <img class="miniImage" src="Images/package back blank.png" alt="back of main package"></div>
+                <div class="gallerymini preview"> <img class="miniImage" src="Images/package back blank.png" alt="back of main package"></div>
                 <div class="gallerymini"> <img class="miniImage" src="Images/checkout product front.png" alt="front of main package"></div>
                 <div class="gallerymini"> <img class="miniImage labeling" src="Images/product label.png" alt="back of main package"></div>
                 <div class="gallerymini"> <img class="miniImage" src="Images/label for back.png" alt="front of main package"></div>
