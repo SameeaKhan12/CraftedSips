@@ -9,5 +9,38 @@
 </head>
 <body>
     
+    <h1>Slider Content Display</h1>
+
+    <input type="range" min="0" max="100" value="50" id="slider">
+    <div id="content">Text</div>
+
+    <script>
+
+        // Change the text content
+        name1Element.textContent = 'Bean 1 Name';
+        name2Element.textContent = 'Bean 2 Name';
+        
+
+        const slider = document.getElementById('slider');
+        const content = document.getElementById('content');
+
+        slider.addEventListener('input', () => {
+        const sliderValue = slider.value;
+
+        if (sliderValue < 33) {
+            content.innerText = "First third - denoting flavor.";
+        } else if (sliderValue < 66) {
+            content.innerText = "Second third - denoting flavor";
+        } else {
+            content.innerText = "Third third - denoting flavor";
+        }
+
+        // Displaying the content
+        content.style.display = 'block';
+    });
+
+
+    </script>
+
 </body>
 </html>

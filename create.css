@@ -33,7 +33,7 @@ h4 {
     width: 200px;
     height: 300px;
     padding: 20 20 20 20;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
 }
 
 .filter-block {
@@ -54,7 +54,8 @@ h4 {
 .item-main {
     display: flex;
     justify-content: space-between;
-    background-color: #efefef;
+    background-color: #6f817b;
+    color: white;
     padding: 10px;
     margin: 10px;
     width: 500px;
@@ -68,7 +69,7 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 10 0 10;
-    padding: 5 10 5 10;
+    padding: 20 10 5 10;
 }
 
 .item-desc {
