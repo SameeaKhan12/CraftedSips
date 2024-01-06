@@ -4,17 +4,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="Buttons.css">
 </head>
 <body>
-    <h2 style="padding-top: 300px;">SELECT YOUR COFFEE BEAN</h2>
-    <div class="top-selection"> 
-        <div>
-            <img src="images/circle.png">
-            <h3 class="name1">Name Of Bean</h3>
+
+    <div class="navBar"> 
+        <nav>
+        <div class="center-element">Crafted Sips</div>
+        <a href="index.html"  target="_blank">HOME</a>
+        <a href="#create" >CREATE</a>
+        <a href="create.html" target="_blank">SHOP</a>
+        <a href="#about">ABOUT</a>
+        <a href="#signin">SIGN IN</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+
+    <h2 style="padding-top: 40px;">Let's Select Your Blend</h2>
+    <div class="top-selection">
+        <div class="top-select-beans">
+            <div>
+                <img class="bean_img" src="images/zach_images/ethiopian_coffee.png">
+                <h3>Sidamo</h3>
+            </div>
+            <div>
+                <img src="images/zach_images/mix.png" width="300" height="300">
+            </div>
+            <div>
+                <img class="bean_img" src="images/zach_images/brazilian_coffee.png">
+                <h3>Mundo Novo</h3>
+            </div>
         </div>
         <div>
-            <img src="images/circle.png">
-            <h3 class="name2">Name Of Bean</h3>
+            <a href="blend.html"><button class="btn enabled" style="width: 180; height: 60; font-size: 32">Blend!</button></a>
         </div>
     </div>
 
@@ -26,31 +49,31 @@
         <h3>Main Content Block</h3>
         <div class="item-grid-container">
             <div class="item-main">
-                <img src="Images/circle.png" alt="test" width="200px" height="300px">
+                <img src="Images/zach_images/ethiopian_coffee.png" alt="test" width="200px" height="300px">
                 <div class="item-text">
                     <div class="item-desc">
-                        <h3>Bean Name</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi obcaecati expedita fuga nulla voluptas. Sit veritatis corporis perferendis ab ullam, aspernatur reiciendis autem quis exercitationem pariatur cum sapiente facilis molestias.</p>
+                        <h3>Sidamo</h3>
+                        <p>The most distinctive flavour notes found in all Sidamo coffees are lemon and citrus with bright crisp acidity.</p>
                     </div>
                     <div class="sub-info">
-                        <p>subtext information</p>
-                        <p class="add-button">Add Button</p>
+                        <p><em>Citrus - Acidic</em></p>
+                        <button class="btn enabled">Select</button>
                     </div>
                 </div>
             </div> 
             <div class="item-main"> 
-                <img src="Images/circle.png" alt="test" width="200px" height="300px">
+                <img src="Images/zach_images/brazilian_coffee.png" alt="test" width="200px" height="300px">
                 <div class="item-text">
                     <div class="item-desc">
-                        <h3>Bean Name</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi obcaecati expedita fuga nulla voluptas. Sit veritatis corporis perferendis ab ullam, aspernatur reiciendis autem quis exercitationem pariatur cum sapiente facilis molestias.</p>
+                        <h3>Mundo Novo</h3>
+                        <p>Medium bodied with a crisp, woody, bold flavor and nutty undertones. A rousing cup of coffee - it boasts an expansive flavor profile and wonderful finish.</p>
                     </div>
                     <div class="sub-info">
                         <p>subtext information</p>
                         <p class="add-button">Add Button</p>
                     </div>
                 </div>
-            </div> <!-- Delete this item-main class-->
+            </div>
             <div class="item-main">
                 <img src="Images/circle.png" alt="test" width="200px" height="300px">
                 <div class="item-text">

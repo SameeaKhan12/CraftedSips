@@ -5,8 +5,6 @@ body {
 
 h1 {
     font-size: 80px;
-    padding-top: 100px;
-    padding-bottom: 50px;
 }
 
 h2 {
@@ -22,19 +20,20 @@ h4 {
 }
 
 .top-selection {
-    background-color: blanchedalmond;
+    background-image: url("./images/zach_images/mixer_background.png");
+    padding: 0 0 20 0;
+}
+
+.top-select-beans {
     display: flex;
     justify-content: center;
 }
 
-.top-selection > div > img {
+.top-select-beans > div > .bean_img {
     width: 200px;
-    height: 200px;
-    padding: 20 40 20 40;
-}
-
-.top-selection > div > img:hover { 
-    border: solid red 2px;
+    height: 300px;
+    padding: 20 20 20 20;
+    margin-bottom: -20px;
 }
 
 .filter-block {
@@ -42,12 +41,11 @@ h4 {
 }
 
 .main-content {
-    background-color: aquamarine;
+    
 }
 
 .item-grid-container {
     display: grid;
-    background-color: pink;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
     place-items: center;
@@ -56,11 +54,12 @@ h4 {
 .item-main {
     display: flex;
     justify-content: space-between;
-    background-color: red;
+    background-color: #efefef;
     padding: 10px;
     margin: 10px;
     width: 500px;
     height: 300px;
+    box-shadow: 5px 5px 20px -10px #000000;
 }
 
 .item-text {
@@ -73,7 +72,7 @@ h4 {
 }
 
 .item-desc {
-    border: green solid 1px;
+    
 }
 
 .item-text > .item-desc > h3 {
@@ -84,7 +83,7 @@ h4 {
 .sub-info {
     display: flex;
     justify-content: space-around;
-    border: green solid 1px;
+    align-items: center;
 }
 
 .add-button {
