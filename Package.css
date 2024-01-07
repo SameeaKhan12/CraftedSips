@@ -12,11 +12,11 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
     flex-wrap: wrap;
     margin-bottom: 200px;
 }
-
+/*
 .bodySide {
     margin-top:50px;
 }
-
+*/
 .line {
     color:#dd8e58;
 }
@@ -283,6 +283,7 @@ h2 {
   .checkoutButton {
     width:440px;
     margin-top: 40px;
-    height: 80px;
+    height: 60px;
     font-size: 30px;
+    background-color: #dd8e58;
   }
