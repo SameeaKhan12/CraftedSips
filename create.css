@@ -34,18 +34,31 @@ h4 {
 }
 
 .top-select-beans > div > .bean_img {
-    width: 200px;
-    height: 300px;
     padding: 20 20 20 20;
     margin-bottom: -30px;
 }
 
 .slider-container {
     text-align: center;
+    margin-top: -30px;
+    padding: 10px;
 }
 
 #slider {
     width: 500px;
+    appearance: none;
+    background: #97562e;
+    border: 5px solid #ffffff;
+    border-radius: 25px
+}
+
+#slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 40px;
+    height: 40px; 
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer; 
 }
 
 #slider-value {
@@ -56,24 +69,26 @@ h4 {
 }
 
 .filter-block {
-    background-color: brown;
+    margin-bottom: 40px;
 }
 
 .filter-grid-container {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 6px;
+    margin-top: -40px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 30px;
     place-items: center;
 }
 
-.main-content {
+.item-content {
     
 }
 
 .item-grid-container {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
     place-items: center;
 }
 
