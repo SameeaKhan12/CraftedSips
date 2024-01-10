@@ -1,22 +1,20 @@
 body {
     font-size: 15px;
-    margin-left: 30px;
-    margin-right: 40px;
-    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
     font-family: 'Roboto Condensed', Arial, sans-serif;
 }
-
-
 
 .checkout {
     position: sticky;
     top: 100px;
     box-shadow: 0px 1px 5px rgb(202, 202, 202);
     float: right;
-    height: 100px;
     width: 250px;
     background-color: rgb(190, 182, 182);
-    margin-right: 15px; background-color: #fff;
+    margin-right: 220px;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,16 +23,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     background-color: #f0f0f0;
 }
 
     .editqty {
-        float:right;
-        font-size: larger;
-        position: absolute;
-        top: 0px;
-        
+        width: auto;
+        display:
     }
 
     .checkout>h2 {
@@ -85,26 +80,38 @@ body {
         bottom: 0px;
     }
 
-.items {
-    display: flex;
-    flex-wrap: wrap;
+.container {
     font-size: 20px;
     box-shadow: 0px 1px 5px rgb(202, 202, 202);
-    margin: 5px;
+    margin-left: 220px;
+    margin-top: 90px;
     padding: 7px;
-    width: 700px;
-    height: 600px;
+    width: 60% ;
+    height: auto;
     overflow: auto;
-    justify-content: center;
+
+
+}
+.items {
+    display:flex;
+    flex-wrap: nowrap;
+   
+    flex-direction: row;
     align-content: center;
 }
-
     .Images {
         float: left;
         margin-right: 5px;
-        height: 470px;
+        height: 150px;
     }
 
+    .items>h1{
+        font-size: 32px;
+
+    }
     .desc {
         float: right;
+        
     }
+
+ 

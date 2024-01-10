@@ -12,14 +12,17 @@
 
 <body>
     
-    <nav>
-        <div class="center-element">Crafted Sips</div>
-        <a href="#home">HOME</a>
-        <a href="#create">CREATE</a>
-        <a href="#shop">SHOP</a>
-        <a href="#about">ABOUT</a>
-        <a href="#signin">SIGN IN</a>
-        <a href="#contact">CONTACT</a>
+    <nav class="header">
+        <span class="logo">Crafted Sips</span>
+        <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">BLEND YOUR OWN</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SIGN IN</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">CART</a></li>
+        </ul>
     </nav>
 
     <h2>
@@ -27,68 +30,96 @@
     </h2>
 
     <div class="checkout">
-
-        <div> 
-            <a href="Package.html"  target="_blank">
-                <button class="editqty">Edit Order </button>
-            </a>
-        </div>
-
+      
+        
         <form id="paymentForm">
             <h2>Payment Details</h2>
         
             <label for="cardNumber">Card Number</label>
-            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
-        
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
             <label for="cardName">Cardholder Name</label>
-            <input type="text" id="cardName" name="cardName" placeholder="John Doe" required>
+            <input type="text" id="cardName" name="cardName" placeholder="John Doe">
         
             <div class="row">
                 <div class="col">
                 <label for="expiryDate">Expiry Date</label>
-                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
                 </div>
                 <div class="col">
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                <input type="text" id="cvv" name="cvv" placeholder="123">
                 </div>
             </div>
-        
+
             <button type="submit">Submit Payment</button>
         </form>
+
+       
         
         <h2 id="ftotal"></h2>
 
-        <script> 
+        <!-- <script> 
             function total(p1, p2, p3, p4) { return p1 + p2 + p3 }
         
             document.getElementById("ftotal").innerHTML = total(8.99, 13.99, 9.99, 15.86);
-        </script>
+        </script> -->
+
 
     </div>
 
-    <div class="items">
-        <h1> Masala Delight</h1>
-
-        <img class="Images img1" src="Images/checkout product front.png" alt="Masala">
-
-        <ul class="desc img1">
-            <li>2 lbs </li>
-            <li> Very bold sweet  </li>
-            <li> Lorem </li>
-        </ul>
-    </div>
+    <div class="container">
+        <h1>
+            Masala Delights
+        </h1>
         
-    <div class="items">
-        <h1>Light Hearted Lift</h1>
+        <div class="items">
+            <div class="inline">
+                <img class="Images img1" src="Images/checkout product front.png" alt="Masala">
+            </div>
+            
+            <div class="inline">
+                <ul class="desc img1">
+                    <li>2 lbs </li>
+                    <li> Very bold sweet  </li>
+                    <li> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</li>
+                </ul>
+            </div>
 
-        <img class="Images img2" src="Images/main page product front.png" alt="Lift">
+            <div class="inline">
+                <a href="Package.html" target="_blank"> 
+                    Edit
+                </a>
+            </div>
+    </div>
+    </div>
+    
 
-        <ul class="desc img1">
-            <li>2 lbs </li>
-            <li> Very bold sweet  </li>
-            <li> Lorem </li>
-        </ul>
+    <div class="container">
+        <h1>
+            Light Hearted Lift
+        </h1>
+        
+        <div class="items">
+            <div class="inline">
+                <img class="Images img2" src="Images/main page product front.png" alt="Lift">
+            </div>
+
+            <div class="inline">
+                <ul class="desc img1">
+                    <li>2 lbs </li>
+                    <li> Very bold sweet  </li>
+                    <li> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</li>
+                </ul>
+            </div>
+
+            <div class="inline">
+                <a href="Package.html" target="_blank"> 
+                    Edit
+                </a>
+            </div>
+
+        </div>
+        
     </div>
 
 
