@@ -5,20 +5,15 @@ body {
 
 .header {
   display: flex;
-  position: fixed;
-  top: 0;
   justify-content: space-around;
   align-items: center;
   min-height: 70px;
   max-height: 200px;
-  width: 100%;
   background-color: white;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
   font-family: Verdana, sans-serif;
   font-size: 12px;
-  z-index: 1000;
 }
-
 
 .header .logo {
   color: #fa7c33;
@@ -42,4 +37,61 @@ body {
 li a:hover {
   color: #fa7c33;
   font-weight: bold;
+}
+
+li a:active {
+  color: rgb(74, 74, 74);
+  font-weight: bold;
+  transition: border-bottom 1s ease;
+  border-bottom: 2px solid #000000;
+  transition: border-bottom .3s ease;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    width: 90vw;
+  }
+
+  .hamburger-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 20;
+    padding: 20;
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 768px) {
+    .header .logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .header ul {
+      display: none;
+    }
+  
+    .hamburger-icon {
+      display: block;
+    }
+  
+    .hamburger-icon:before {
+      content: "\2630";
+      font-size: 20px;
+    }
+  
+    .header:hover .dropdown-menu {
+      display: flex;
+      opacity: 0.7;
+    }
 }
