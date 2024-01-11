@@ -40,8 +40,30 @@ h4 {
     margin-bottom: -30px;
 }
 
+.slider-container {
+    text-align: center;
+}
+
+#slider {
+    width: 500px;
+}
+
+#slider-value {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .filter-block {
     background-color: brown;
+}
+
+.filter-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 6px;
+    place-items: center;
 }
 
 .main-content {
@@ -50,7 +72,7 @@ h4 {
 
 .item-grid-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 10px;
     place-items: center;
 }
