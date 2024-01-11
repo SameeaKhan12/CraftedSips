@@ -12,6 +12,20 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
     flex-wrap: wrap;
     margin-bottom: 200px;
 }
+
+
+@media screen and (max-width: 1000px) {
+    .body {
+        display: flex;
+        flex-direction: row;
+       }
+
+    .DescDiv {
+        font-size: 40px;
+        text-align: center;
+    }
+  }
+  
 /*
 .bodySide {
     margin-top:50px;
@@ -69,6 +83,7 @@ font-family:  'Roboto Condensed', Arial, sans-serif;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .labeling {
     width:100%;
