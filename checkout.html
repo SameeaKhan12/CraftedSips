@@ -85,37 +85,51 @@
         
     </div>
 
-</div>
-
     <div class="checkout">
+        
+        <div class="check">
+            <div class="floatL">
 
-        <div class="floatR">
-            <form id="paymentForm">
-                <h2>Payment Details</h2>
+                <div id="cost">
+                    <script>
+                        function costofCof(lb1,lb2,lb3,tax){
+                            return (lb2+lb2)*tax;
+                        }
 
-                <label for="cardNumber">Card Number</label>
-                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+                        document.getElementById("cost").innerHTML = costofCof(6.00,12.00,18.00,0.10);
+                    </script>
+                </div>
 
-                <label for="cardName">Cardholder Name</label>
-                    <input type="text" id="cardName" name="cardName" placeholder="John Doe">
+            </div>
 
-                    <div class="row">
-                        <div class="col">
-                            <label for="expiryDate">Expiry Date</label>
-                                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
-                        </div>
+            <div class="floatR">
+                <form id="paymentForm">
 
-                        <div class="col">
-                            <label for="cvv">CVV</label>
-                                <input type="text" id="cvv" name="cvv" placeholder="123">
-                        </div>
-                    </div>
+                        <h2>Payment Details</h2>
 
-                <button type="submit">Submit Payment</button>
-            </form>
+                        <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
 
+                        <label for="cardName">Cardholder Name</label>
+                            <input type="text" id="cardName" name="cardName" placeholder="John Doe">
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="expiryDate">Expiry Date</label>
+                                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                                </div>
+
+                                <div class="col">
+                                    <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="123">
+                                </div>
+                            </div>
+
+                        <button type="submit">Submit Payment</button>
+
+                </form>
+            </div>
         </div>
-
     </div>
 
 </div>
