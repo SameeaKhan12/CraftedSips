@@ -13,86 +13,48 @@
 <body>
     
     <nav class="header">
-        <span class="logo">Crafted Sips</span>
+        <span class="logo"> <a class="no-link" href="create.html" rel="stylesheet">Crafted Sips</a></span>
         <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">BLEND YOUR OWN</a></li>
-        <li><a href="#">SHOP</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SIGN IN</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">CART</a></li>
+        <div class="hamburger-icon"></div>
+        <ul class="dropdown-menu">
+            <li><a href="">HOME</a></li>
+            <li><a href="create.html" rel="stylesheet">BLEND YOUR OWN</a></li>
+            <li><a href="Package.html" rel="stylesheet">SHOP</a></li>
+            <li><a href="README.md" rel="me">ABOUT</a></li>
+            <li><a href="README.md" rel="me">CONTACT</a></li>
+            <li><a href="checkout.html" rel="stylesheet">CART</a></li>
         </ul>
     </nav>
 
-    <h2>
-        CHECKOUT
-    </h2>
-
-    <div class="checkout">
-      
-        
-        <form id="paymentForm">
-            <h2>Payment Details</h2>
-        
-            <label for="cardNumber">Card Number</label>
-            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
-            <label for="cardName">Cardholder Name</label>
-            <input type="text" id="cardName" name="cardName" placeholder="John Doe">
-        
-            <div class="row">
-                <div class="col">
-                <label for="expiryDate">Expiry Date</label>
-                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
-                </div>
-                <div class="col">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="123">
-                </div>
-            </div>
-
-            <button type="submit">Submit Payment</button>
-        </form>
-
-       
-        
-        <h2 id="ftotal"></h2>
-
-        <!-- <script> 
-            function total(p1, p2, p3, p4) { return p1 + p2 + p3 }
-        
-            document.getElementById("ftotal").innerHTML = total(8.99, 13.99, 9.99, 15.86);
-        </script> -->
-
-
-    </div>
-
     <div class="container">
+
         <h1>
             Masala Delights
         </h1>
         
         <div class="items">
-            <div class="inline">
+
+            <div class="img1">
                 <img class="Images img1" src="Images/checkout product front.png" alt="Masala">
             </div>
             
-            <div class="inline">
+            <div class="purchaseinfo">
                 <ul class="desc img1">
                     <li>2 lbs </li>
                     <li> Very bold sweet  </li>
-                    <li> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</li>
+                    <li><p> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</p></li>
                 </ul>
             </div>
 
-            <div class="inline">
-                <a href="Package.html" target="_blank"> 
-                    Edit
+            <div class="packagebtn">
+                <a href="Package.html">
+                    <button>Edit</button>
                 </a>
-            </div>
+            </div>  
+
+        </div>
+
     </div>
-    </div>
-    
 
     <div class="container">
         <h1>
@@ -100,27 +62,75 @@
         </h1>
         
         <div class="items">
-            <div class="inline">
+
+            <div class="img2">
                 <img class="Images img2" src="Images/main page product front.png" alt="Lift">
             </div>
 
-            <div class="inline">
-                <ul class="desc img1">
+            <div class="purchaseinfo">
+                <ul class="desc img2">
                     <li>2 lbs </li>
                     <li> Very bold sweet  </li>
-                    <li> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</li>
+                    <li><p> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</p></li>
                 </ul>
             </div>
 
-            <div class="inline">
-                <a href="Package.html" target="_blank"> 
-                    Edit
+            <div class="packagebtn">
+                <a href="Package.html"> 
+                    <button> Edit</button>
                 </a>
             </div>
 
         </div>
         
     </div>
+
+</div>
+
+    <div class="checkout">
+
+        <div class="floatR">
+            <form id="paymentForm">
+                <h2>Payment Details</h2>
+
+                <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+
+                <label for="cardName">Cardholder Name</label>
+                    <input type="text" id="cardName" name="cardName" placeholder="John Doe">
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="expiryDate">Expiry Date</label>
+                                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                        </div>
+
+                        <div class="col">
+                            <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123">
+                        </div>
+                    </div>
+
+                <button type="submit">Submit Payment</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
