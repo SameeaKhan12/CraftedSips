@@ -75,29 +75,25 @@ li a:active {
 .be-a-brewer {
   background-color: #fa7c33;
   color: rgb(255, 255, 255);
-  background-position: top; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  padding-left: 7vw;
-  padding-right: 7vw;
+  padding-top: .8vw;
+  padding-bottom: .8vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   font-size: 1.5vw;
   font-family: Verdana;
   position: relative;
-  margin-left: 71%; 
-  margin-top: 2%;
-  width: auto;
-  border: none;
+  margin-left: 65%; 
+  margin-top: 2.5%;
+  width: 25vw;
   border: none;
   cursor: pointer;
-  transition: background-color 1s, color 1s;
-  border-radius: 5px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.337)
+  border-radius: none;
+  box-shadow: inset 0 0 10px rgb(198, 103, 9)
 }
 
 .be-a-brewer:hover {
-  background-color: rgb(117, 191, 7);
+  background-color: rgb(130, 186, 45);
+  box-shadow: none;
   color: white;
 }
 
@@ -106,7 +102,99 @@ li a:active {
   border: 1px solid white;
 }
 
+.how-it-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20vw;
+  font-family: Impact;
+  font-size: clamp(25px, 4vw, 80px);
+  color: #fa7c33;
+  letter-spacing: 1px;
+  margin-bottom: 3vw;
+}
 
+/*  <div class="step-container">
+      <img src="step1" width="100px"      height="100px" class="step">
+        <div class="step-detail">
+          <div class="step-description">
+            <h3>1</h3>
+            <p>Pick from different levels and methods of roasting to alter the flavor and body of your coffee.
+            </p>
+          </div>
+        </div>
+    </div>*/
+
+.step-container {
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.step {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+  .step {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .step {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 999px) {
+  .step {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.step-detail {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.step-description {
+  width: 50vw;
+}
+
+.step-description h3 {
+  font-family: impact;
+  font-size: clamp(16px, 2vw, 2vw);
+  color:#4a4a4a;
+}
+
+.step-description p {
+  font-family: Verdana;
+  font-size: 1em;
+  color:#4a4a4a;
+  font-size: clamp(13px, 15px, 1vw);
+  line-height: 2vw;
+  margin-top: -1vw;
+}
+
+@media (max-width: 768px) {
+  .step-description p {
+    line-height: 3vw;
+  }
+ 
 @media (max-width: 768px) {
   .flex-container {
     width: 90vw;
@@ -116,14 +204,13 @@ li a:active {
     cursor: pointer;
     position: absolute;
     left: 20px;
-    z-index: 2;
   }
 
   .dropdown-menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 55px;
+    top: 40px;
     left: 20px;
     padding: 30px;
     background-color: white;
