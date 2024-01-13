@@ -26,125 +26,108 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="incart">
+        <div class="container">
 
-        <h1>
-            Masala Delights
-        </h1>
-        
-        <div class="items">
-
-            <div class="img1">
-                <img class="Images img1" src="Images/checkout product front.png" alt="Masala">
-            </div>
+            <h1>
+                Masala Delights
+            </h1>
             
-            <div class="purchaseinfo">
-                <ul class="desc img1">
-                    <li>2 lbs </li>
-                    <li> Very bold sweet  </li>
-                    <li><p> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</p></li>
-                </ul>
-            </div>
+            <div class="items">
 
-            <div class="packagebtn">
-                <a href="Package.html">
-                    <button>Edit</button>
-                </a>
-            </div>  
+                <div class="img1">
+                    <img class="Images img1" src="Images/checkout product front.png" alt="Masala">
+                </div>
+                
+                <div class="purchaseinfo">
+                    <ul class="desc img1">
+                        <li>2 lbs </li>
+                        <li> Very bold sweet  </li>
+                        <li><p> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</p></li>
+                    </ul>
+                </div>
 
-        </div>
+                <div class="packagebtn">
+                    <a href="Package.html">
+                        <button>Edit</button>
+                    </a>
+                </div>  
 
-    </div>
-
-    <div class="container">
-        <h1>
-            Light Hearted Lift
-        </h1>
-        
-        <div class="items">
-
-            <div class="img2">
-                <img class="Images img2" src="Images/main page product front.png" alt="Lift">
-            </div>
-
-            <div class="purchaseinfo">
-                <ul class="desc img2">
-                    <li>2 lbs </li>
-                    <li> Very bold sweet  </li>
-                    <li><p> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</p></li>
-                </ul>
-            </div>
-
-            <div class="packagebtn">
-                <a href="Package.html"> 
-                    <button> Edit</button>
-                </a>
             </div>
 
         </div>
-        
-    </div>
 
-    <div class="checkout">
-        
-        <div class="check">
-            <div class="floatL">
+        <div class="container">
+            <h1>
+                Light Hearted Lift
+            </h1>
+            
+            <div class="items">
 
-                <div id="cost">
-                    <script>
-                        function costofCof(lb1,lb2,lb3,tax){
-                            return (lb2+lb2)*tax;
-                        }
+                <div class="img2">
+                    <img class="Images img2" src="Images/main page product front.png" alt="Lift">
+                </div>
 
-                        document.getElementById("cost").innerHTML = costofCof(6.00,12.00,18.00,0.10);
-                    </script>
+                <div class="purchaseinfo">
+                    <ul class="desc img2">
+                        <li>2 lbs </li>
+                        <li> Very bold sweet  </li>
+                        <li><p> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem, nemo expedita velit cumque harum veniam eligendi, fuga minus voluptate sunt porro possimus vero dolorum ab rem! Dolores, in  vitae!</p></li>
+                    </ul>
+                </div>
+
+                <div class="packagebtn">
+                    <a href="Package.html"> 
+                        <button> Edit</button>
+                    </a>
                 </div>
 
             </div>
-
-            <div class="floatR">
-                <form id="paymentForm">
-
-                        <h2>Payment Details</h2>
-
-                        <label for="cardNumber">Card Number</label>
-                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
-
-                        <label for="cardName">Cardholder Name</label>
-                            <input type="text" id="cardName" name="cardName" placeholder="John Doe">
-
-                            <div class="row">
-                                <div class="col">
-                                    <label for="expiryDate">Expiry Date</label>
-                                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
-                                </div>
-
-                                <div class="col">
-                                    <label for="cvv">CVV</label>
-                                        <input type="text" id="cvv" name="cvv" placeholder="123">
-                                </div>
-                            </div>
-
-                        <button type="submit">Submit Payment</button>
-
-                </form>
-            </div>
+            
         </div>
     </div>
+        
+    <div class="check">
+        <div class="floatL">
 
-</div>
+            <div id="cost">
+                <script>
+                    function costofCof(lb1,lb2,lb3,tax){
+                        return (lb2+lb2)*tax;
+                    }
 
+                    document.getElementById("cost").innerHTML = costofCof(6.00,12.00,18.00,0.10);
+                </script>
+            </div>
 
+        </div>
 
+        <div class="floatR">
+            <form id="paymentForm">
+                    <h2>Payment Details</h2>
 
+                    <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
 
+                    <label for="cardName">Cardholder Name</label>
+                        <input type="text" id="cardName" name="cardName" placeholder="John Doe">
 
+                        <div class="row">
+                            <div class="col">
+                                <label for="expiryDate">Expiry Date</label>
+                                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                            </div>
 
+                            <div class="col">
+                                <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="123">
+                            </div>
+                        </div>
 
-
-
-
-
+                    <button type="submit">Submit Payment</button>
+            </form>
+        </div>
+    </div>
 
 
 </body>
