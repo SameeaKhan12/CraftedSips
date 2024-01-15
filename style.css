@@ -332,9 +332,9 @@ li a:active {
   }
   
   .about-section {
-    top: 20px;
     width: 60vw;
     position: absolute;
+    top: 60px;
   }
   
   .about-section, .h3 {
@@ -349,7 +349,7 @@ li a:active {
     color: rgb(225, 225, 225);
     font-family: verdana;
     font-weight: lighter;
-    font-size: clamp(12px, 13px, 14px);
+    font-size: clamp(12px, 12px, 16px);
   }
   
   .footer-menu {
@@ -370,7 +370,7 @@ li a:active {
   
   .footer li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff6d8;
     font-family: verdana;
     font-weight: lighter;
     font-size: clamp(12px, 13px, 14px);
@@ -391,6 +391,8 @@ li a:active {
   @media (min-width: 300px) and (max-width: 768px) {
     .about-section {
       width: 90vw;
+      top: 30px;
+      line-height: 20px
     }
   
     .footer {
@@ -399,7 +401,6 @@ li a:active {
   }
   
   @media (min-width: 769px) and (max-width: 1200px) {
-    /* Adjust styles for wider screens if needed */
     .about-section {
       width: 70vw;
     }
