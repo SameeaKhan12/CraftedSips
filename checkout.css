@@ -144,25 +144,26 @@ body {
 
     .gimme-space {
         height: 200px;
-        width: 800px;
     }
 
     .floatR {
+        display: flex;
+        flex-direction: column;
         padding-top: 200px;
         position: absolute;
-        margin-left: 100px auto;
-        width: 800px;
+        width: 70vw;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
       
       #paymentForm {
+        flex-wrap: wrap;
         background: #f4f4f4;
         padding: 30px;
         border-radius: 10px;
         width: 100%;
-        margin: 20px auto; /* Center the #paymentForm horizontally */
+    
       }
       
       #paymentForm h2 {
@@ -184,8 +185,6 @@ body {
       }
       
       #paymentForm .row {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 15px;
       }
