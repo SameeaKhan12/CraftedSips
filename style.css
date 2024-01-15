@@ -41,7 +41,7 @@ li a:hover {
 li a:active {
   color: rgb(74, 74, 74);
   font-weight: bold;
-  transition: border-bottom 0.3s ease, color 1s ease; /* Combine transitions */
+  transition: border-bottom 0.3s ease, color 1s ease;
   border-bottom: 2px solid #000000;
 }
 
@@ -51,7 +51,6 @@ li a:active {
   align-items: center;
   flex: 1;
 }
-
 
 .flex-container {
   width: 75vw;
@@ -123,7 +122,7 @@ li a:active {
   align-items: center;
 }
 
-.step img{
+.step img {
   max-width: 80px;
   height: 80px;
   object-fit: cover;
@@ -226,9 +225,6 @@ li a:active {
   padding: 15px;
 }
 
-.product-description {
-}
-
 .product-description h3 {
   font-family: impact;
   font-size: clamp(16px, 2.2vw, 2.8vw);
@@ -270,16 +266,19 @@ li a:active {
   .product-description p {
     line-height: 3vw;
   }
+}
 
 @media (max-width: 768px) {
   .step-description p {
     line-height: 3vw;
   }
+}
  
 @media (max-width: 768px) {
   .flex-container {
     width: 90vw;
   }
+}
 
   .hamburger-icon {
     cursor: pointer;
@@ -318,4 +317,97 @@ li a:active {
     display: flex;
     opacity: 0.6;
   }
+
+  
+  .footer {
+    display: flex;
+    position: relative;
+    background-color: #404040;
+    bottom: 0;
+    justify-content: space-around;
+    text-align: center;
+    height: 25vw;
+    width: 100vw;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+  
+  .about-section {
+    top: 20px;
+    width: 60vw;
+    position: absolute;
+  }
+  
+  .about-section, .h3 {
+    color: #fa7c33;
+    font-family: verdana;
+    font-weight: lighter;
+    font-size: clamp(13px, 14px, 14px);
+    line-height: 22px;
+  }
+  
+  .about, .about-para {
+    color: rgb(225, 225, 225);
+    font-family: verdana;
+    font-weight: light;
+    font-size: clamp(12px, 13px, 14px);
+  }
+  
+  .footer-menu {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-end;
+    width: 90vw;
+    height: auto;
+    bottom: 5%;
+  }
+  
+  .footer li {
+    display: inline;
+    list-style: none;
+    padding: 1vw;
+  }
+  
+  .footer li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: verdana;
+    font-weight: light;
+    font-size: clamp(12px, 13px, 14px);
+  }
+  
+  .footer li a:hover {
+    color: #fa7c33;
+    font-weight: bold;
+  }
+  
+  .footer li a:active {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: border-bottom 0.3s ease, color 1s ease;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  @media (min-width: 300px) and (max-width: 768px) {
+    .about-section {
+      width: 90vw;
+    }
+  
+    .footer {
+      height: 50vw;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1200px) {
+    /* Adjust styles for wider screens if needed */
+    .about-section {
+      width: 70vw;
+    }
+  
+    .footer {
+      height: 30vw;
+    }
+  }
+
 
