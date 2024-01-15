@@ -1,4 +1,4 @@
-/*body {
+body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -8,8 +8,8 @@
     padding-top: 100px;
     font-family: 'Roboto Condensed', Arial, sans-serif;
     position: relative;
-    grid-template-columns: ;
-}*/
+    grid-template-columns: 
+}
 
 .container {
     font-size: 20px;
@@ -122,7 +122,7 @@
         bottom: 0px;
     }
 
-    /*.floatR{
+   .floatR{
         border: black 5px solid;
         border-radius: 30%;
         float: right;
@@ -142,71 +142,8 @@
         justify-content: center;
         align-content: center;
         overflow: scroll;
-    }*/
-
-    .gimme-space {
-        height: 200px;
     }
 
-    .floatR {
-        display: flex;
-        flex-direction: column;
-        padding-top: 200px;
-        position: absolute;
-        width: 70vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      #paymentForm {
-        flex-wrap: wrap;
-        background: #f4f4f4;
-        padding: 30px;
-        border-radius: 10px;
-        width: 100%;
-    
-      }
-      
-      #paymentForm h2 {
-        font-size: 2em;
-        color: #333;
-      }
-      
-      #paymentForm label {
-        margin-top: 15px;
-        font-weight: bold;
-        height: 30px;
-      }
-      
-      #paymentForm input {
-        width: 100%;
-        padding: 12px;
-        margin-top: 10px;
-        box-sizing: border-box;
-      }
-      
-      #paymentForm .row {
-        justify-content: space-between;
-        margin-top: 15px;
-      }
-      
-      #paymentForm .col {
-        flex: 1;
-        margin-right: 15px;
-      }
-      
-      #paymentForm button {
-        background: #4caf50;
-        color: #fff;
-        padding: 12px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 15px;
-      }
-      
-      #paymentForm button:hover {
-        background: #45a049;
-      }
-      
+  
+
+   
