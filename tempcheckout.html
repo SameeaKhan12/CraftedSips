@@ -11,8 +11,8 @@
 </head>
 
 <body>
-
-    <nav class="header">
+    
+    <!--<nav class="header">
         <span class="logo"><a class="no-link" href="create.html" rel="stylesheet">Crafted Sips</a></span>
         <ul>
         <div class="hamburger-icon"></div>
@@ -24,7 +24,21 @@
             <li><a href="README.md" rel="me">CONTACT</a></li>
             <li><a href="checkout.html" rel="stylesheet">CART</a></li>
         </ul>
-    </nav>
+    </nav>-->
+
+    <nav class="header">
+        <span class="logo">Crafted Sips</span>
+        <div class="hamburger-icon"></div>
+        <ul class="dropdown-menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">BLEND YOUR OWN</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SIGN IN</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">CART</a></li>
+        </ul>
+      </nav>
 
     <div class="incart">
         <div class="container">
@@ -88,6 +102,21 @@
     </div>
         
     <div class="check">
+        <div class="floatL">
+
+            <div id="cost">
+                <script>
+                    function costofCof(lb1,lb2,lb3,tax){
+                        return (lb2+lb2)*tax;
+                    }
+
+                    document.getElementById("cost").innerHTML = costofCof(6.00,12.00,18.00,0.10);
+                </script>
+            </div>
+        </div>
+
+<div class="gimme-space"></div>
+
         <div class="floatR">
             <form id="paymentForm">
                     <h2>Payment Details</h2>

@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  position: relative;
+  grid-template-columns: 
+}
+
+.container {
+  font-size: 20px;
+  box-shadow: 0px 1px 5px rgb(202, 202, 202);
+  margin: 50px 50px 20px 50px;
+  padding: 7px;
+  width: 75%;
+  height: auto;
+  overflow: auto;
+}
+
+
+  .items {
+      display:flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-content: center;
+  }
+      .Images {
+          float: left;
+          margin-right: 5px;
+          height: 150px;
+          padding-left: 20px;
+      }
+
+      .items>h1{
+          font-size: 20px;
+          padding-left: 20px ;
+
+      }
+      .desc {
+          float: right;
+  
+      }
+      .packagebtn {
+          padding-right: 150px;
+          }
+
+.check { 
+  display: grid;
+  position: sticky;
+  box-shadow: 0px 1px 5px rgb(202, 202, 202);
+  grid-template-columns: auto auto ;
+  gap: 5px;
+  width: 100px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif; 
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  margin: 75px;
+  
+}
+  .check>h2 {
+      text-align: end;
+      color: black;
+  }
+
+  label {
+      display: block;
+      margin-top: 10px;
+      color: #555;
+  }
+
+  input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  .row {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .col {
+      width: 48%;
+  }
+
+  button {
+      right: 6%;
+      background-color: #fa7c33;   
+      color: white;
+      border: none; 
+      border-radius: 2px;  
+      cursor: pointer;
+      transition: background-color 1s, color 1s;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 30px;
+      padding-right: 30px;
+      letter-spacing: 2px;
+  }
+
+  button:hover {
+      background-color: rgb(117, 191, 7);
+      font-weight: bold;
+  }
+  button:active{
+      background-color: black;
+      outline: 2px solid white;
+  }
+  script  {
+      float: right;
+      bottom: 0px;
+  }
+
+ .floatR{
+      border: black 5px solid;
+      border-radius: 30%;
+      float: right;
+      margin: 10px 10px 10px 10px;
+      justify-content: center;
+      align-content: center;
+      overflow: scroll;
+     
+  }
+  .floatL {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      float: left;
+      border: 3px solid black;
+      border-radius: 15%;
+      width: auto;
+      height: auto;
+      justify-content: center;
+      align-content: center;
+      overflow: scroll;
+  }
